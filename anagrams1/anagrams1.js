@@ -28,15 +28,13 @@ function getAnagramsOf(input){
         arrayStrings.push(palavras[j])
     }
     }
+
     for(let i = 0; i < arrayStrings.length; i++){
-        p.innerText = `${arrayStrings.join(" ")}`
+        p.innerText = `${arrayStrings.join(" ").toLocaleLowerCase()}`
     }
     
 }
 
-
-
 function alphabetize(string) {
     return string.toLowerCase().split("").sort().join("").trim(); 
 }
-
