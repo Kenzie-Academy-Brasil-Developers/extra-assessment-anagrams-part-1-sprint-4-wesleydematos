@@ -30,7 +30,7 @@ function getAnagramsOf(input){
     }
 
     for(let i = 0; i < arrayStrings.length; i++){
-        p.innerText = `${arrayStrings.join(" ").toLocaleLowerCase()}`
+        p.innerText = `${arrayStrings.join(" ").toLowerCase()}`
     }
     
 }
