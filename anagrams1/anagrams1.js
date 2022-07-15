@@ -23,16 +23,15 @@ function getAnagramsOf(input){
     let arrayStrings = []
 
     for(let j = 0; j < palavras.length; j++){
-    let palavraAlterada = alphabetize(palavras[j])
-    if(inputAlterado == palavraAlterada){
-        arrayStrings.push(palavras[j])
-    }
+        let palavraAlterada = alphabetize(palavras[j])
+        if(inputAlterado == palavraAlterada){
+            arrayStrings.push(palavras[j])
+        }
     }
 
     for(let i = 0; i < arrayStrings.length; i++){
         p.innerText = `${arrayStrings.join(" ").toLowerCase()}`
     }
-    
 }
 
 function alphabetize(string) {
